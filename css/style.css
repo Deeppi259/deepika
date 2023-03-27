@@ -1,0 +1,69 @@
+.navigation-section {
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+.short-intro {
+    margin-top: 8%;
+}
+
+.short-intro-pic {
+    height: auto;
+    width: auto;
+}
+
+.short-decription {
+    font-size: 1.3rem;
+}
+
+.name {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+}
+
+.social-links {
+    font-size: 2rem;
+}
+
+.style {
+    border-top: 3px double #0d6efd;
+}
+
+.skill-tag img {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.tools-tag img {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.bg-text {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.selfi img {
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about-text {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-links a {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    color: #0d6efd;
+}
