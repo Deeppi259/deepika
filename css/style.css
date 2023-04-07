@@ -112,6 +112,22 @@ body {
     border-bottom: 3px solid #0d6efd;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 20%;
+}
+
 
 /* 
 media queries */

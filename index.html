@@ -34,14 +34,14 @@
                         </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Skills</a>
+                                <a class="nav-link" href="#skills">Skills</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
 
                         </ul>
@@ -101,7 +101,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-4">
-                <h1 class="text-center bg-text"><b>Skills</b> </h1>
+                <h1 class="text-center bg-text" id="skills"><b>Skills</b> </h1>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
             </div>
             <div class="col-sm-12 col-md-7 col-lg-7">
                 <p class="text-primary">GET TO KNOW ME </p>
-                <h1 class="bg-text"><b>About</b> </h1>
+                <h1 class="bg-text" id="about"><b>About</b> </h1>
                 <p class="mt-2 about-text">
                     Hello ! My name is jogindra kumar, and i am self-taught web developer in delhi, India. my journey toward becoming a web developer has been a long and winding one. i have B.com degree . however , i eventually realized that this career path was not fulfilling
                     my creative side. In search of a new career that would allow me to utilize my creative and logical skills, i discovered web development and have been pursuing it ever since . i place a high value on personal growth and always strive
@@ -178,7 +178,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="bg-text text-center"><b>My Portfolio</b> </h1>
+                <h1 class="bg-text text-center" id="portfolio"><b>My Portfolio</b> </h1>
             </div>
         </div>
     </div>
@@ -272,10 +272,34 @@
         </div>
     </div>
     <!-- my portfolio section end -->
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⬆️</button>
     <footer class="text-center mb-2">Developed by Jogindra kumar with <i class="fa-solid fa-heart text-danger"></i> and <i class="fa-solid fa-code"></i> </footer>
 
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
