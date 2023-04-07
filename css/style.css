@@ -1,3 +1,7 @@
+body {
+    text-align: justify;
+}
+
 .navigation-section {
     font-size: 1.5rem;
     margin-top: 2%;
@@ -106,4 +110,66 @@
 
 .brand:hover {
     border-bottom: 3px solid #0d6efd;
+}
+
+
+/* 
+media queries */
+
+
+/* For Tablet View */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+@media only screen and (min-width: 820px) and (max-width: 1180px) {}
+
+
+/* For Mobile Portrait View */
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .gfg-div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: #fff;
+    }
+}
+
+
+/* For iPhone 4 Portrait or Landscape View */
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .intro-pic img {
+        width: 100%;
+    }
+    .selfi img {
+        width: 100%;
+    }
+    .bg-text {
+        font-size: 3rem;
+    }
+}
+
+
+/* For iPhone 5 Portrait or Landscape View */
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: cornflowerblue;
+        color: black;
+    }
+}
+
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: darkgoldenrod;
+        color: black;
+    }
 }
